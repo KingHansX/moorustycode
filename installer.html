@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalar MooMoo Helper - Domina el Juego</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 2rem;
+        }
+
+        .installer-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 3rem 2rem;
+        }
+
+        .step {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 15px;
+            border-left: 4px solid #4CAF50;
+        }
+
+        .step-number {
+            background: #4CAF50;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .step-content h3 {
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .step-content p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .download-section {
+            text-align: center;
+            margin: 3rem 0;
+            padding: 2rem;
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            border-radius: 15px;
+            color: white;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: white;
+            color: #4CAF50;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            margin-top: 1rem;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(255,255,255,0.3);
+        }
+
+        .warning {
+            background: rgba(255,193,7,0.1);
+            border: 1px solid #ffc107;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+
+        .warning h4 {
+            color: #ffc107;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .warning ul {
+            margin-left: 1.5rem;
+            color: #666;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 2rem;
+        }
+
+        .back-btn:hover {
+            opacity: 0.8;
+        }
+
+        .features-preview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .feature-preview {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .feature-preview i {
+            font-size: 2rem;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-preview h4 {
+            font-size: 0.9rem;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px auto;
+                padding: 1rem;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .step {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i>
+            Volver a la página principal
+        </a>
+
+        <div class="installer-card">
+            <div class="header">
+                <h1>🚀 Instalar MooMoo Helper</h1>
+                <p>Domina MooMoo.io en minutos</p>
+            </div>
+
+            <div class="content">
+                <div class="download-section">
+                    <h2>📦 Descargar la Extensión</h2>
+                    <p>Haz clic en el botón para acceder a la descarga</p>
+                    <a href="https://www.mediafire.com/folder/m6exnyjqg23l6/rustyCode" class="download-btn" target="_blank">
+                        <i class="fas fa-download"></i>
+                        DESCARGAR AHORA
+                    </a>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Habilitar Modo Desarrollador</h3>
+                        <p>1. Abre Chrome y ve a <strong>chrome://extensions/</strong></p>
+                        <p>2. Activa el <strong>"Modo desarrollador"</strong> en la esquina superior derecha</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Cargar la Extensión</h3>
+                        <p>1. Haz clic en <strong>"Cargar descomprimida"</strong></p>
+                        <p>2. Selecciona la carpeta descomprimida de la extensión</p>
+                        <p>3. ¡Listo! La extensión aparecerá en tu lista</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Verificar Instalación</h3>
+                        <p>1. Ve a <a href="https://moomoo.io" target="_blank" style="color: #4CAF50;">moomoo.io</a></p>
+                        <p>2. Deberías ver el icono de la extensión en la barra de herramientas</p>
+                        <p>3. Haz clic en el icono para configurar la extensión</p>
+                    </div>
+                </div>
+
+                <div class="features-preview">
+                    <div class="feature-preview">
+                        <i class="fas fa-bolt"></i>
+                        <h4>Velocidad Suprema</h4>
+                    </div>
+                    <div class="feature-preview">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Protección Avanzada</h4>
+                    </div>
+                    <div class="feature-preview">
+                        <i class="fas fa-crosshairs"></i>
+                        <h4>Precisión Mortal</h4>
+                    </div>
+                    <div class="feature-preview">
+                        <i class="fas fa-sync-alt"></i>
+                        <h4>Actualizaciones Constantes</h4>
+                    </div>
+                </div>
+
+                <div class="warning">
+                    <h4>
+                        <i class="fas fa-exclamation-triangle"></i>
+                        Importante
+                    </h4>
+                    <p>Esta extensión debe instalarse en modo desarrollador. Chrome bloqueará extensiones no verificadas por seguridad.</p>
+                    <ul>
+                        <li>Verifica que el modo desarrollador esté activado</li>
+                        <li>Recarga la página de moomoo.io después de instalar</li>
+                        <li>Revisa la consola del navegador (F12) si hay problemas</li>
+                        <li>Asegúrate de que todos los archivos estén en la carpeta correcta</li>
+                    </ul>
+                </div>
+
+                <div style="text-align: center; margin-top: 2rem;">
+                    <p style="color: #666; font-size: 0.9rem;">
+                        Desarrollado con ❤️ por <strong>H._.ns</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
